@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Event handler for submit button
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    if(input.value === ""){
+    if(input.value === "" || input.value === " "){
       alert("Please type a name of a person!!!");
       ul.removeChild(li);
     }
